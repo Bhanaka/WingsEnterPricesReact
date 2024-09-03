@@ -8,8 +8,10 @@ import { useRoutes } from 'react-router-dom';
 import Dashboard from '@/pages/dashboard';
 import LayoutPage from '@/pages/layout';
 import LoginPage from '@/pages/login';
+import Product from '@/pages/product';
 
 import WrapperRouteComponent from './config';
+import { title } from 'process';
 
 const NotFound = lazy(() => import(/* webpackChunkName: "404'"*/ '@/pages/404'));
 const Documentation = lazy(() => import(/* webpackChunkName: "404'"*/ '@/pages/doucumentation'));
@@ -41,6 +43,10 @@ const routeList: RouteObject[] = [
       {
         path: '',
         element: <Navigate to="dashboard" />,
+      },
+      {
+        path: 'productItem',
+        element :<WrapperRouteComponent element={<Product/> }titleId=''/>
       },
       {
         path: 'dashboard',

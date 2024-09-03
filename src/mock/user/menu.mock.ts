@@ -12,6 +12,13 @@ const mockMenuList: MenuList = [
     icon: 'dashboard',
     path: '/dashboard',
   },
+  { code: 'productItem', 
+    label: { 
+      zh_CN: '首页', 
+      en_US: 'Product Items' }, 
+      icon: 'dashboard', 
+      path: '/productItem' },
+
   {
     code: 'documentation',
     label: {
